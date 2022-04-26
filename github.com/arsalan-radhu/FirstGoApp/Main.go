@@ -5,6 +5,11 @@ import (
 	"strconv"
 )
 
+func newExampleFunction(firstNum int, secondNum int) int {
+	multipliedNumber := firstNum * secondNum
+	return multipliedNumber
+}
+
 func main() {
 
 	//Variable Declaration
@@ -56,4 +61,16 @@ func main() {
 	mufc := Team{name: "Manchester United", players: players}
 
 	fmt.Println(mufc)
+
+	fmt.Println("Enter First Number: ")
+	var fnum int
+	fmt.Scanln(&fnum)
+
+	var snum int
+	fmt.Println("Enter Second Number: ")
+	fmt.Scanln(&snum)
+	multiplication := newExampleFunction(fnum, snum)
+
+	fmt.Println("The multiplication of " + strconv.Itoa(fnum) + " and " + strconv.Itoa(snum) + " is " + strconv.Itoa(multiplication))
+
 }
