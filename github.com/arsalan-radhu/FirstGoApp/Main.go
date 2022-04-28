@@ -73,4 +73,8 @@ func main() {
 
 	fmt.Println("The multiplication of " + strconv.Itoa(fnum) + " and " + strconv.Itoa(snum) + " is " + strconv.Itoa(multiplication))
 
+	var message string
+	fmt.Println("Enter Message: ")
+	fmt.Scanln(&message)
+	fmt.Println(message)
 }
